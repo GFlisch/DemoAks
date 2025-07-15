@@ -1,0 +1,88 @@
+name: Manual
+
+on: 
+  workflow_dispatch:
+    inputs:
+      serviceName:
+        description: 'Name of the service'     
+        required: true
+        default: 'Core'
+      solutionName:
+        description: 'Name of the solution'     
+        required: true
+        default: 'DemoAks'    
+      envName:
+        description: 'Name of the Environment'     
+        required: true
+        default: 'Development'  
+      dotNet:
+        description: 'Version of the .Net runtime'     
+        required: true
+        default: '8.0'
+      container:
+        description: 'Container registry'     
+        required: true
+        default: 'akslearningacrdev4u.azurecr.io'  
+      version:
+        description: "The Major - Minor version - Patch number version of the assembly."
+        required: true
+        default: '1.0.0'
+      cluster:
+        description: 'K8s Cluster name.'
+        required: true
+        default: 'aks-learning-aks-dev4u'
+      resource_group:
+        description: 'Azure Resource Group Name.'
+        required: true
+        default: 'aks-learning-RG-dev4u'        
+      namespace:
+        description: 'K8s namespace'     
+        required: true
+        default: 'demoaks'
+      testFilter:
+        description: 'Filter to apply during a test'     
+        required: true
+        default: 'Category=All'        
+
+jobs:
+  build:
+    uses: GFlisch/Arc4u.Guidance.Workflows/.github/workflows/BuildService.yml@v7
+    with:
+      serviceName: ${{ github.event.inputs.serviceName }}
+      solutionName: ${{ github.event.inputs.solutionName }}
+      dotNet: ${{ github.event.inputs.dotNet }}
+      testFilter: ${{ github.event.inputs.testFilter }}
+
+  docker:
+    needs: build
+    uses: GFlisch/Arc4u.Guidance.Workflows/.github/workflows/Docker.yml@v7
+    with:
+      DockerContainer: '${{ github.event.inputs.container }}'
+      DockerImage: '${{ github.event.inputs.container }}/${{  inputs.solutionName }}'
+      DockerImageTagVersion: '${{ github.event.inputs.serviceName }}_${{ github.event.inputs.version }}.${{ github.run_id }}-${{ github.run_number }}'
+      DockerEnvironmentTagVersion: '${{ github.event.inputs.serviceName }}_${{ github.event.inputs.envName }}'
+      Registry: ${{ github.event.inputs.container }}
+    secrets:
+      CR_User: ${{ secrets.ACR_USER }}
+      CR_Password: ${{ secrets.ACR_PASSWORD }}      
+
+  kubernetes:
+    needs: docker
+    uses: GFlisch/Arc4u.Guidance.Workflows/.github/workflows/AKS.yml@v7
+    with:
+      Registry: ${{ github.event.inputs.container }}
+      Namespace: '${{ github.event.inputs.namespace }}'
+      ResourceGroup: '${{ github.event.inputs.resource_group }}'
+      K8Cluster: '${{ github.event.inputs.cluster }}'
+      Environment: ${{ github.event.inputs.envName }}
+      ServiceName: ${{ github.event.inputs.serviceName }}
+      SolutionName : ${{ github.event.inputs.solutionName }}
+      DockerImageTagVersion: '${{ github.event.inputs.version }}.${{ github.run_id }}-${{ github.run_number }}'
+
+    secrets:
+      ACR_User: ${{ secrets.ACR_USER }}
+      ACR_Password: ${{ secrets.ACR_PASSWORD }}
+      AZURE_CLIENT_ID:  ${{ secrets.AZURE_CLIENT_ID }}
+      AZURE_CLIENT_SECRET:  ${{ secrets.AZURE_CLIENT_SECRET }}
+      AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+      AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}     
