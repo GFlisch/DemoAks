@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/DemoAks.Core.Host.props" />
+</Project>

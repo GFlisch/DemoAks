@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "UKIKKQnSBYgbmv0P7JOqs8jUOs2I5Y0+smeEjWqHulw=",
+  "Source": "DemoAks.Core.Host",
+  "BasePath": "_content/DemoAks.Core.Host",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,6 @@
+@DemoAks.Core.Host_HostAddress = http://localhost:5290
+
+GET {{DemoAks.Core.Host_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
