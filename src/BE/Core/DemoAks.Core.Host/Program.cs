@@ -1,4 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
+builder.Configuration.AddJsonFile("configs/appsettings.json", optional: true, reloadOnChange: true);
+builder.Configuration.AddJsonFile($"configs/appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
