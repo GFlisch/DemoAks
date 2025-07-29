@@ -22,7 +22,7 @@ spec:
     spec:
       nodeSelector:
         kubernetes.azure.com/mode: user
-      serviceAccountName: aks-guidance-sa
+      serviceAccountName: aks-learning-sa
       containers:
       - name: core
         image: '#fullImagePath#'
