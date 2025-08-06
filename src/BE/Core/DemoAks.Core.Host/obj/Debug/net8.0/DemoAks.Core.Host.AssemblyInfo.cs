@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DemoAks.Core.Host")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a83ce14f9d992c181a6a7559639cf69b3272aee3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c8a53513beb083170b8151f00f2928a92937f4e")]
 [assembly: System.Reflection.AssemblyProductAttribute("DemoAks.Core.Host")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DemoAks.Core.Host")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

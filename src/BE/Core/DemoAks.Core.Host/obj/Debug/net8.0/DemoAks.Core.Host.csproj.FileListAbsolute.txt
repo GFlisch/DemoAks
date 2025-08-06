@@ -32,8 +32,6 @@
 /Users/gflisch/Documents/Elia/DemoAks/src/DemoAks/BE/Core/DemoAks/obj/Debug/net8.0/DemoAks.Core.Host.pdb
 /Users/gflisch/Documents/Elia/DemoAks/src/DemoAks/BE/Core/DemoAks/obj/Debug/net8.0/DemoAks.Core.Host.genruntimeconfig.cache
 /Users/gflisch/Documents/Elia/DemoAks/src/DemoAks/BE/Core/DemoAks/obj/Debug/net8.0/ref/DemoAks.Core.Host.dll
-/Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/bin/Debug/net8.0/appsettings.Development.json
-/Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/bin/Debug/net8.0/appsettings.json
 /Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/bin/Debug/net8.0/DemoAks.Core.Host
 /Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/bin/Debug/net8.0/DemoAks.Core.Host.deps.json
 /Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/bin/Debug/net8.0/DemoAks.Core.Host.runtimeconfig.json
@@ -53,11 +51,6 @@
 /Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/DemoAks.Core.Host.MvcApplicationPartsAssemblyInfo.cache
 /Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/staticwebassets.build.json
 /Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/staticwebassets.development.json
-/Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/staticwebassets/msbuild.DemoAks.Core.Host.Microsoft.AspNetCore.StaticWebAssets.props
-/Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/staticwebassets/msbuild.build.DemoAks.Core.Host.props
-/Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.DemoAks.Core.Host.props
-/Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.DemoAks.Core.Host.props
-/Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/staticwebassets.pack.json
 /Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/scopedcss/bundle/DemoAks.Core.Host.styles.css
 /Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/DemoAks..40B1B0A0.Up2Date
 /Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/DemoAks.Core.Host.dll
@@ -65,3 +58,13 @@
 /Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/DemoAks.Core.Host.pdb
 /Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/DemoAks.Core.Host.genruntimeconfig.cache
 /Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/ref/DemoAks.Core.Host.dll
+/Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/bin/Debug/net8.0/Configs/appsettings.Development.json
+/Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/bin/Debug/net8.0/Configs/appsettings.json
+/Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/bin/Debug/net8.0/DemoAks.Core.Host.staticwebassets.endpoints.json
+/Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/rpswa.dswa.cache.json
+/Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/DemoAks.Core.Host.sourcelink.json
+/Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/rjimswa.dswa.cache.json
+/Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/rjsmrazor.dswa.cache.json
+/Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/rjsmcshtml.dswa.cache.json
+/Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/staticwebassets.build.json.cache
+/Users/gflisch/Documents/Elia/DemoAks/src/BE/Core/DemoAks.Core.Host/obj/Debug/net8.0/staticwebassets.build.endpoints.json

@@ -39,18 +39,18 @@ spec:
         - name: secrets-store
           mountPath: /app/certs
           readOnly: true
-        livenessProbe:
-          httpGet:
-            path: /health/live
-            port: 8090
-          initialDelaySeconds: 3
-          periodSeconds: 3
-        readinessProbe:
-          httpGet:
-            path: /health/ready
-            port: 8090
-          initialDelaySeconds: 1
-          timeoutSeconds: 1
+#        livenessProbe:
+#          httpGet:
+#            path: /health/live
+#            port: 8090
+#          initialDelaySeconds: 3
+#          periodSeconds: 3
+#        readinessProbe:
+#          httpGet:
+#            path: /health/ready
+#            port: 8090
+#          initialDelaySeconds: 1
+#          timeoutSeconds: 1
         env:
         - name: "ASPNETCORE_ENVIRONMENT"
           value: "#environment#"  
