@@ -22,6 +22,7 @@ spec:
     spec:
       nodeSelector:
         kubernetes.azure.com/mode: user
+        beta.kubernetes.io/os: linux
       serviceAccountName: aks-learning-sa
       containers:
       - name: core
